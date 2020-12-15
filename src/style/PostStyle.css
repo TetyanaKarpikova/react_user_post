@@ -1,0 +1,15 @@
+.baseNewPost{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;    
+}
+
+.basePostTitle{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.basePostBody{
+    font-size: 14px;
+
+}

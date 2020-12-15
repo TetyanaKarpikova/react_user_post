@@ -1,0 +1,15 @@
+.userTop {
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    width: 500px;
+}
+
+.userName {
+    justify-content: left;
+    flex-grow: 2;
+}
+
+.userLink {
+    justify-content: right;
+}
