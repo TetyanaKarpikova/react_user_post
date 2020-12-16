@@ -1,25 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../../style/PostStyle.css';
 
-import {
-    withRouter} from 'react-router-dom';
+const NewPost = ({item}) => {
 
-class NewPost extends Component {
-
-    render() {
-        let { item } = this.props;
-
-        return (
-            <div className={'baseNewPost'}>
-                <div className={'basePostTitle'}>
-                    {item.id} - {item.title}
-                </div>
-                <div className={'basePostBody'}>
-                    {item.body}
-                </div>
+    return (
+        <div className={'baseNewPost'}>
+            <div className={'basePostTitle'}>
+                {item.id} - {item.title}
             </div>
-        )
-    }
-
+            <div className={'basePostBody'}>
+                {item.body}
+            </div>
+        </div>
+    )
 }
-export default withRouter(NewPost);
+export default NewPost;
